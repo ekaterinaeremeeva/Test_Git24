@@ -49,7 +49,7 @@ function task5()
     arr.forEach(x => {
         sum += x;
     });
-    let sredn=(+sum / +arr.length);
+    let sredn = (+sum / +arr.length);
     alert(sredn.toFixed(1));
 }
 
