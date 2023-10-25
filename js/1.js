@@ -31,5 +31,15 @@ function task3()
     alert(arr.every(isTrue))
 }
 
+function task4()
+{
+    arr=Array.from(Array(10),()=>{return Math.round(Math.random()*30)});
+    alert(arr);
+    let flt=arr.filter(function(elem){
+        return(elem % 5)==0 
+    });
+    alert(flt);
+}
+
 
 
