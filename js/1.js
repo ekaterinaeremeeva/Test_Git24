@@ -10,7 +10,7 @@ function task1()
 
 function task2()
 {
-    arr=Array.from(Array(4),()=>{return Math.round(Math.random()*30)});
+    arr=Array.from(Array(4),()=>{return Math.round(Math.random()*4)});
     alert(arr);
     for (let elem of arr) {
     if (elem > 0 && elem <= 10) {
