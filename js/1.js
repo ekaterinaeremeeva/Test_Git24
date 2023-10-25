@@ -7,3 +7,15 @@ function task1()
     },0);
     alert(summa);
 }
+function task2()
+{
+    arr=Array.from(Array(4),()=>{return Math.round(Math.random()*4)});
+    console.log(arr);
+    for (let elem of arr) {
+    if (elem > 0 && elem <= 10) {
+    console.log(elem);
+    }
+    }
+    let summa = arr.reduce((sum, elem) => sum+elem, 0);
+    alert(summa);
+}
