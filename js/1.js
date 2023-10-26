@@ -7,6 +7,7 @@ function task1()
     },0);
     alert(summa);
 }
+
 function task2()
 {
     arr=Array.from(Array(4),()=>{return Math.round(Math.random()*20)});
@@ -18,3 +19,36 @@ function task2()
     }, 0);
     alert(summa);
 }
+
+function task3()
+{
+    arr=Array.from(Array(4),()=>{return Math.round(Math.random()*10)});
+    alert(arr);
+    function isTrue(number) {
+        return number % 2 === 0;
+    }
+    alert(arr.every(isTrue))
+}
+
+function task4()
+{
+    arr=Array.from(Array(10),()=>{return Math.round(Math.random()*30)});
+    alert(arr);
+    let flt=arr.filter(function(elem){
+        return(elem % 5)==0 
+    });
+    alert(flt);
+}
+
+function task5()
+{
+    arr=Array.from(Array(4),()=>{return Math.round(Math.random()*10)});
+    alert(arr); 
+    let sum=0;
+    arr.forEach(x => {
+        sum += x;
+    });
+    let sredn = (+sum / +arr.length);
+    alert(sredn.toFixed(1));
+}
+
