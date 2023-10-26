@@ -10,7 +10,7 @@ function task1()
 
 function task2()
 {
-    arr=Array.from(Array(4),()=>{return Math.round(Math.random()*4)});
+    arr=Array.from(Array(4),()=>{return Math.round(Math.random()*20)});
     alert(arr);
     let arr1 = arr.filter(x => x > 0 && x <10);
     console.log(arr1);
