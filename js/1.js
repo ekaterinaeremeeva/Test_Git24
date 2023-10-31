@@ -52,3 +52,13 @@ function task5()
     alert(sredn.toFixed(1));
 }
 
+function task6()
+{
+    array=Array.from(Array(10),()=>{return Math.round(Math.random()*10)});
+    alert(array); 
+    let firstElement = array.shift();
+    console.log(firstElement);
+    console.log(array);
+    array.push(firstElement);
+    alert (array);
+}
