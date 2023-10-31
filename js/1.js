@@ -80,3 +80,11 @@ function task7()
     console.log(summaNechetn);
     alert(summaChetn/summaNechetn);
 }
+
+function task8()
+{
+    let arr=Array.from(Array(10),()=>{return Math.round(Math.random()*9)});
+    alert (arr);
+    let arr1=arr.map(elem=>elem +1);
+    alert(arr1);
+}
