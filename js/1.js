@@ -84,7 +84,7 @@ function task7()
 function task8()
 {
     let num=prompt("Введите число");
-    if(isNaN(num) && num>=0 && num<10) 
+    if(isNaN(num) || +num>=0 || +num<10) 
         alert("Error");
     else{
     let arr=num.split('').map(elem=>+elem +1);
