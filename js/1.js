@@ -83,8 +83,11 @@ function task7()
 
 function task8()
 {
-    let arr=Array.from(Array(10),()=>{return Math.round(Math.random()*9)});
-    alert (arr);
-    let arr1=arr.map(elem=>elem +1);
-    alert(arr1);
+    let num=prompt("Введите число");
+    if (isNaN(num) && num>=0 && num<10) 
+        alert("Error");
+    else{
+    let arr=num.split('').map(elem=>+elem +1);
+    alert(`Ваше число ${num}, новое число ${arr.join('')}`);
+    }
 }
