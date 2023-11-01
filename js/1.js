@@ -83,7 +83,7 @@ function task7()
 
 function task8()
 {
-    let num=prompt("Введите число");
+    let num=prompt ("Введите число");
     if (isNaN(num) || num<0 || num>10)
         alert("Error");
     else{
