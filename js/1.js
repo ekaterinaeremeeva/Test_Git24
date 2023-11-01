@@ -91,3 +91,11 @@ function task8()
     alert(`Ваше число ${num}, новое число ${arr.join('')}`);
     }
 }
+
+function task9()
+{
+    let arr = ['http://123', 'www.example', 'http://example', '123http://123', '36', 'close'];
+    alert (arr);
+    const result = arr.filter((word) => word.startsWith('http://'));
+    alert (result);
+}
