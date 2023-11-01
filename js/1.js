@@ -99,3 +99,38 @@ function task9()
     const result = arr.filter((word) => word.startsWith('http://'));
     alert (result);
 }
+
+function task10()
+{
+    let data = [
+        {
+            1: 11,
+            2: 12,
+            3: 13,
+        },
+        {
+            1: 21,
+            2: 22,
+            3: 23,
+        },
+        {
+            1: 24,
+            2: 25,
+            3: 26,
+        },
+    ];
+    console.log(data);
+    let keys = data.map(obj => [].concat(Object.keys(obj))).flat();
+    alert(keys);    
+    let values = data.map(obj => [].concat(Object.values(obj))).flat();
+    alert(values);
+    let sumvalues = values.reduce(function(sum, elem) {
+        return sum + elem;
+    }, 0);
+    alert(`Сумма элементов ${sumvalues}`);
+}
+    
+    
+
+
+    
